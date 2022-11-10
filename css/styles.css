@@ -38,6 +38,10 @@
   /* Social icon colors */
 
   --color-social-icons: #afb1b8;
+
+  /*Transition duration */
+  --duration: 250ms;
+  --timing-duration: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Reaset style*/
@@ -130,7 +134,12 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.02em;
   font-size: 14px;
+
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-duration);
 }
+
 .nav-site-item:hover,
 .nav-site-item:focus {
   color: var(--accent-color);
@@ -168,6 +177,12 @@ ul {
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
+}
+
+.contact-touch-item {
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-duration);
 }
 
 .contact-touch-item:not(:last-child) {
@@ -231,6 +246,10 @@ ul {
   font-weight: 400;
   letter-spacing: 0.03em;
   font-size: 14px;
+
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-duration);
 }
 .company-address:hover,
 .company-address:focus {
@@ -246,6 +265,10 @@ ul {
   font-weight: 400;
   letter-spacing: 0.03em;
   font-size: 14px;
+
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-duration);
 }
 
 .contact-information:hover,
@@ -283,6 +306,10 @@ ul {
   border-radius: 50px;
   color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-duration);
 }
 
 .footer-link:hover,
@@ -353,6 +380,10 @@ ul {
   line-height: 1.8;
   letter-spacing: 0.06em;
   border: none;
+
+  transition-property: box-shadow;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-duration);
 }
 
 .hero-button:hover,
@@ -586,6 +617,10 @@ ul {
   justify-content: center;
   border-radius: 50px;
   color: var(--color-social-icons);
+
+  transition-property: color, background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-duration);
 }
 
 .social-link:hover,
@@ -626,6 +661,10 @@ ul {
   border: 1px solid var(--color-social-icons);
   border-radius: 4px;
   color: var(--color-social-icons);
+
+  transition-property: color, border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-duration);
 }
 
 .client:not(:last-child) {
@@ -687,11 +726,16 @@ ul {
   background-color: var(--second-white-color);
   cursor: pointer;
   border: none;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-duration);
 }
 
 .portfolio-items:hover,
@@ -700,7 +744,6 @@ ul {
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .second-portfolio-ul {
@@ -745,7 +788,6 @@ ul {
 
 .box-portfolio:hover .portfolio-hover-box {
   opacity: 1;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) linear;
 }
 
 .portfolio-hover-paragraph {
